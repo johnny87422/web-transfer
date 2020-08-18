@@ -10,6 +10,6 @@
 
 4.建立新的image，輸入 " docker build -t johnny87422/web-transfer . "
 
-5.建立容器，輸入" docker run -restart=always -dp 5008:80 johnny87422/web-transfer "
+5.建立容器，輸入" docker run -restart=always -name web-transfer -dp 5008:80 johnny87422/web-transfer "
 
 6.看到一堆數字就能關掉了
