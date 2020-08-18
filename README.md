@@ -6,10 +6,14 @@
 
 2.用cmd切換到nginx的資料夾裡面
 
-3.刪除docker image，輸入" docker image rm johnny87422/web-transfer "
+3.停止容器 docker container stop web-transfer
 
-4.建立新的image，輸入 " docker build -t johnny87422/web-transfer . "
+4.刪除容器 docker rm web-transfer
 
-5.建立容器，輸入" docker run -restart=always -name web-transfer -dp 5008:80 johnny87422/web-transfer "
+4.刪除docker image，輸入" docker image rm johnny87422/web-transfer "
 
-6.看到一堆數字就能關掉了
+5.建立新的image，輸入 " docker build -t johnny87422/web-transfer . "
+
+6.建立容器，輸入" docker run -restart=always -name web-transfer -dp 5008:80 johnny87422/web-transfer "
+
+7.看到一堆數字就能關掉了
